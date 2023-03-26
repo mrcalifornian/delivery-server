@@ -1,10 +1,9 @@
-* {
+/* * {
     overflow: hidden;
-}
+} */
 
 body {
     font-family: Arial, sans-serif;
-    overflow: hidden;
 }
 
 header {
