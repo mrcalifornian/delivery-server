@@ -129,3 +129,26 @@ exports.getProducts = (req, res, next) => {
     res.status(200).json(prods);
 }
 
+exports.cats = () => {
+    let list = []
+    for (let p of prods) {
+        if (!list.includes(p.category)) {
+            list.push(p.category);
+        }
+    }
+    return list;
+}
+
+exports.someProducts = (category) => {
+    let list = []
+    for (let p of prods) {
+        if (p.category == category) {
+            list.push(p);
+        }
+    }
+    return list;
+}
+
+exports.postProducts = (req, res, next) => {
+
+}
