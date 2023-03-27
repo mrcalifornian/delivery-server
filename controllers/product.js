@@ -121,6 +121,11 @@ let prods = [
     }
 ]
 
+exports.products = () => {
+    return prods;
+}
+
 exports.getProducts = (req, res, next) => {
     res.status(200).json(prods);
 }
+

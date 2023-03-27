@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(bodyParser.json());
 
-app.use('/main', productRouter);
+app.use('/api', productRouter);
 app.use('/users', userRouter);
 app.use('/views', viewRouter);
 
