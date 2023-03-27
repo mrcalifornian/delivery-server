@@ -6,6 +6,7 @@ require('dotenv').config();
 
 const userRouter = require('./routes/users');
 const viewRouter = require('./routes/views');
+const productRouter = require('./routes/products');
 
 const PORT = process.env.PORT || 3000;
 const DBLINK = process.env.MONGODB;
@@ -18,6 +19,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(bodyParser.json());
 
+app.use('/main', productRouter);
 app.use('/users', userRouter);
 app.use('/views', viewRouter);
 
