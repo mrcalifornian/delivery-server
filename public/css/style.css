@@ -13,8 +13,7 @@ header {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    max-width: 90%;
-
+    width: 95%;
 }
 
 .my-info {
@@ -22,13 +21,12 @@ header {
     font-size: 15px;
     font-weight: bold;
     margin-right: 10px;
-    /* line-height: 100; */
 }
 
 main {
-    max-width: 1200px;
-    margin: 0;
-    /* padding: 15px; */
+    width: 95%;
+    margin: 0 2%;
+    align-self: center;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
