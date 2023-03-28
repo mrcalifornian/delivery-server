@@ -28,7 +28,8 @@
                 <input type="hidden" name="category" id="category" value="<%= category %>">
                 <section id="salads">
                     <div class="food-item">
-                        <a href="#" onclick="submitForm('my-form-<%= category %>')">
+                        <a class="<%= current === category ? 'active' : '' %>" href="#"
+                            onclick="submitForm('my-form-<%= category %>')">
                             <h2>
                                 <%= category %>
                             </h2>
